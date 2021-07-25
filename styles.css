@@ -1,0 +1,85 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+  }
+  body {
+    font-family:"Raleway",sans-serif;
+    background:#f0f0f0;
+  }
+  .pwd-checker {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:350px;
+    background:#fff;
+    padding:20px;
+    box-shadow:0px 0px 20px 5px rgba(0,0,0,0.05);
+  }
+  .pwd-checker h2 {
+    margin:10px 0px 30px;
+    font-size:20px;
+    color:#111;
+    text-align:center;
+  }
+  .pwd-checker .form-element {
+    position:relative;
+  }
+  .pwd-checker label {
+    display:block;
+    margin-bottom:8px;
+    color:#111;
+  }
+  .pwd-checker input {
+    padding:8px 30px 8px 10px;
+    width:100%;
+    font-size:16px;
+    border:1px solid #bbb;
+    outline:none;
+  }
+  .pwd-checker .pwd-display-toggle-btn {
+    position:absolute;
+    right:10px;
+    top:35px;
+    width:20px;
+    height:20px;
+    text-align:center;
+    line-height:20px;
+    cursor:pointer;
+  }
+  .pwd-checker .pwd-display-toggle-btn i.fa-eye-slash {
+    display:none;
+  }
+  .pwd-checker .pwd-display-toggle-btn.active i.fa-eye-slash {
+    display:block;
+  }
+  .pwd-checker .pwd-display-toggle-btn.active i.fa-eye {
+    display:none;
+  }
+  .pwd-checker .pwd-strength {
+    position:relative;
+    width:100%;
+    height:20px;
+    margin-top:10px;
+    text-align:center;
+    background:#f2f2f2;
+    display:none;
+  }
+  .pwd-checker .pwd-strength span:nth-child(1) {
+    position:relative;
+    font-size:13px;
+    color:#111;
+    z-index:2;
+    font-weight:600;
+  }
+  .pwd-checker .pwd-strength span:nth-child(2) {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:0%;
+    height:100%;
+    border-radius:5px;
+    z-index:1;
+    transition:all 300ms ease-in-out;
+  }
